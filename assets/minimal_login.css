@@ -1,6 +1,8 @@
-.login form {
+#loginform {
 	background:#fbfbfb;
 	padding-bottom: 36px;
+	box-shadow: none;
+	border: 1px solid #ddd;
 }
 
 input::-webkit-input-placeholder {
@@ -19,7 +21,7 @@ input:-moz-placeholder {
 	padding:0 0 0 2px;
 }
 
-.login label {
+#loginform label {
 	visibility: hidden;
 	position: relative;
 	z-index: 1;
@@ -29,13 +31,14 @@ input:-moz-placeholder {
 	opacity: 0;
 }
 
-.login p.js--filled label {
+#loginform p.js--filled label {
 	visibility: visible;
 	opacity: 1;
 	text-indent: 0;
 	vertical-align:bottom;
 	bottom:0;
 }
+
 input[type="text"], input[type="password"], input[type="checkbox"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"],
 input[type="search"], input[type="radio"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], select, textarea {
 	box-shadow:none;
@@ -49,19 +52,18 @@ input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focu
 select:focus, textarea:focus {
 	box-shadow:none;
 }
-.login form {
-	box-shadow: none;
-	border: 1px solid #ddd;
-}
 
-.login form .input, .login input[type="text"], .login form input[type="checkbox"] {
+#loginform .input,
+#loginform input[type="text"],
+#loginform form input[type="checkbox"] {
 	padding:5px 10px;
 }
 
 #backtoblog {
 	display: none;
 }
-.login #nav {
+
+#login #nav {
 	display: none;
 }
 
@@ -88,6 +90,7 @@ select:focus, textarea:focus {
 	background:#006799;
 }
 
-.login form .input, .login input[type="text"] {
+#loginform .input,
+#loginform input[type="text"] {
 	padding:5px 10px 10px 10px;
  }
